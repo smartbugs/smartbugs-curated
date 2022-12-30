@@ -8,15 +8,15 @@ SmartBugs Curated provides a collection of vulnerable Solidity smart contracts o
 
 | Vulnerability | Description | Level |
 | --- | --- | -- |
-| [Reentrancy](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/reentrancy) | Reentrant function calls make a contract to behave in an unexpected way | Solidity |
-| [Access Control](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/access_control) | Failure to use function modifiers or use of tx.origin | Solidity |
-| [Arithmetic](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/arithmetic) | Integer over/underflows | Solidity |
-| [Unchecked Low Level Calls](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/unchecked_low_level_calls) | call(), callcode(), delegatecall() or send() fails and it is not checked | Solidity |
-| [Denial Of Service](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/denial_of_service) | The contract is overwhelmed with time-consuming computations | Solidity |
-| [Bad Randomness](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/bad_randomness) | Malicious miner biases the outcome | Blockchain |
-| [Front Running](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/front_running) | Two dependent transactions that invoke the same contract are included in one block | Blockchain |
-| [Time Manipulation](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/time_manipulation) | The timestamp of the block is manipulated by the miner | Blockchain |
-| [Short Addresses](https://github.com/smartbugs/smartbugs-curated/dataset/blob/main/short_addresses) | EVM itself accepts incorrectly padded arguments | EVM |
+| [Reentrancy](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/reentrancy) | Reentrant function calls make a contract to behave in an unexpected way | Solidity |
+| [Access Control](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/access_control) | Failure to use function modifiers or use of tx.origin | Solidity |
+| [Arithmetic](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/arithmetic) | Integer over/underflows | Solidity |
+| [Unchecked Low Level Calls](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/unchecked_low_level_calls) | call(), callcode(), delegatecall() or send() fails and it is not checked | Solidity |
+| [Denial Of Service](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/denial_of_service) | The contract is overwhelmed with time-consuming computations | Solidity |
+| [Bad Randomness](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/bad_randomness) | Malicious miner biases the outcome | Blockchain |
+| [Front Running](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/front_running) | Two dependent transactions that invoke the same contract are included in one block | Blockchain |
+| [Time Manipulation](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/time_manipulation) | The timestamp of the block is manipulated by the miner | Blockchain |
+| [Short Addresses](https://github.com/smartbugs/smartbugs-curated/tree/main/dataset/short_addresses) | EVM itself accepts incorrectly padded arguments | EVM |
 
 ## Example
 Contracts are annotated with a comment containing information about their source (`@source`), author (`@author`), and line numbers of where vulnerabilities are reported (`@vulnerable_at_lines`). For each identified line, a comment with the type of the vulnerability is added (`// <yes> <report> CATEGORY`).
