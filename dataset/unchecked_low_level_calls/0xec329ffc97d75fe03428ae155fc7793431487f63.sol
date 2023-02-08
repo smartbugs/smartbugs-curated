@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 30
  */
 
-pragma solidity >=0.4.11;
+pragma solidity ^0.4.11; /* originally >=0.4.11 */
 
 contract Owned {
     function Owned() {
