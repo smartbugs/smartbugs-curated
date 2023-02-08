@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 17
  */
 
-pragma solidity ^0.4.0;
+pragma solidity ^0.5.0;
 
 contract Reentrancy_insecure {
 
