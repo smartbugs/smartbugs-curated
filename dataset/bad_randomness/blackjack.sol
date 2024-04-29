@@ -5,7 +5,7 @@
  * @author: -
  */
 
- pragma solidity ^0.4.2;
+ pragma solidity ^0.4.9;
 
 library Deck {
 	// returns random number from 0 to 51

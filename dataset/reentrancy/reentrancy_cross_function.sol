@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 24
  */
 
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.24;
 
 contract Reentrancy_cross_function {
 

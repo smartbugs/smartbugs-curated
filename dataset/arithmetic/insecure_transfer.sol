@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 18
  */
 
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.10;
 
 contract IntegerOverflowAdd {
     mapping (address => uint256) public balanceOf;

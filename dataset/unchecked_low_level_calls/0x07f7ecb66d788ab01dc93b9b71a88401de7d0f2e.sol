@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 201,213
  */
 
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.24;
 
 contract PoCGame
 {
