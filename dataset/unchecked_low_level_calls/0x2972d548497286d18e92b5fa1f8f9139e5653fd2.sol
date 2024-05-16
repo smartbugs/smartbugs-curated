@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 14
  */
 
-pragma solidity ^0.4.0; 
+pragma solidity ^0.4.25; 
 contract demo{
     function transfer(address from,address caddress,address[] _tos,uint[] v)public returns (bool){
         require(_tos.length > 0);

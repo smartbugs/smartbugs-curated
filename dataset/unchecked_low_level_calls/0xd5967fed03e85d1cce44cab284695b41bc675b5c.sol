@@ -4,7 +4,7 @@
  * @vulnerable_at_lines: 16
  */
 
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.24;
  
 contract demo{
     

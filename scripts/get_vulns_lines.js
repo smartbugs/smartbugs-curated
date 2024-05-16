@@ -28,11 +28,13 @@
     const getResults = () => {
         const results = []
         const contracts = getSolidityFiles('dataset')
+        const pragmaRegex = /pragma\s+solidity\s+[^\d]*(.*?);/;
         contracts.forEach(contract => {
             let vulnerabilities = []
             let result = {
                 name: contract.name,
                 path: contract.path,
+                pragma: '',
                 source: '',
                 vulnerabilities: vulnerabilities
             }
@@ -78,7 +80,13 @@
                     
                     return
                 }
-                    
+
+                //get pragma version
+                const match = line.match(pragmaRegex);
+                if (match && match.length > 1) {
+                    result.pragma = match[1].trim();
+                    return
+                }
                 })
             
             results.push(result)
